@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Worlds of Miyazaki | Virtual Art Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>The Worlds of Miyazaki</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About the Artist</a>
+      <a href="#movies">Movie Collection</a>
+      <a href="#trailers">Movie Trailers</a>
+      <a href="#references">References</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <h2>Welcome to the Worlds of Miyazaki</h2>
+
+      <p>
+        Imaginative worlds of Hayao Miyazaki, one of Japan's most celebrated animation filmmakers.
+        Explore five best Studio Ghibli films and discover the artistic ideas that takes you to the different world.
+      </p>
+
+      <a href="#movies" class="button">
+        Explore the Collection
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>Meet the Artist: Hayao Miyazaki</h2>
+
+      <div class="about-layout">
+        <div>
+          <h3>The Artist Behind the Magic</h3>
+
+          <p>
+            Hayao Miyazaki was born on January 5, 1941,
+            in Tokyo, Japan. He is a Japanese animator,
+            director, screenwriter, and co-founder of
+            Studio Ghibli.
+          </p>
+
+          <p>
+            Miyazaki is known for imaginative films
+            that combine fantasy with stories about
+            childhood, nature, friendship, courage,
+            and environmental protection.
+          </p>
+
+          <p>
+            His films are admired for detailed
+            hand-drawn animation, painted landscapes,
+            expressive characters, and imaginative
+            fantasy environments.
+          </p>
+
+          <h3>Early Career and Studio Ghibli</h3>
+
+          <p>
+            Miyazaki began working at Toei Animation
+            in 1963. During his early career, he
+            collaborated with Isao Takahata.
+          </p>
+
+          <p>
+            In 1985, Miyazaki and Takahata founded
+            Studio Ghibli with the involvement of
+            producer Toshio Suzuki.
+          </p>
+        </div>
+
+        <figure>
+          <img
+            src="images/Hayao-Miyazaki_2.jpg"
+            alt="Photograph of Hayao Miyazaki"
+            loading="lazy">
+
+          <figcaption>
+            Hayao Miyazaki, filmmaker and co-founder
+            of Studio Ghibli.
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3>Career and Achievements</h3>
+
+      <ul>
+        <li><strong>1941:</strong> Born in Tokyo, Japan.</li>
+        <li><strong>1963:</strong> Joined Toei Animation.</li>
+        <li><strong>1984:</strong> Directed Nausicaä of the Valley of the Wind.</li>
+        <li><strong>1985:</strong> Co-founded Studio Ghibli.</li>
+        <li><strong>1988:</strong> Released My Neighbor Totoro.</li>
+        <li><strong>2003:</strong> Spirited Away won Best Animated Feature at the Academy Awards.</li>
+        <li><strong>2014:</strong> Received an Academy Honorary Award.</li>
+        <li><strong>2024:</strong> The Boy and the Heron won Best Animated Feature.</li>
+      </ul>
+
+      <h3>Discover Miyazaki's Creative Process</h3>
+
+      <p>
+        Miyazaki is known for his dedication to
+        traditional animation, storyboards, and
+        visual storytelling. His work combines
+        detailed drawings with carefully imagined
+        characters and environments.
+      </p>
+
+      <a
+        class="button"
+        href="https://www.youtube.com/results?search_query=Hayao+Miyazaki+official+interview+documentary"
+        target="_blank"
+        rel="noopener noreferrer">
+        Watch Miyazaki Interviews
+      </a>
+    </section>
+
+
+<!-- MOVIE COLLECTION -->
+<section id="movies">
+  <h2>Explore the Movie Collection</h2>
+
+  <p>
+    This exhibition features five films directed
+    by Hayao Miyazaki. Each film represents
+    a different part of his artistic vision,
+    from magical fantasy worlds to peaceful
+    countryside landscapes.
+  </p>
+
+  <p>
+    Select a film below to explore its story.
+  </p>
+
+  <div class="movie-buttons" id="movie-buttons"></div>
+
+  <article
+    class="movie-detail"
+    id="movie-detail"
+    aria-live="polite">
+  </article>
+
+  <div class="movie-navigation">
+    <button type="button" onclick="previousMovie()">
+      &#8592; Previous Movie
+    </button>
+
+    <span id="movie-counter" aria-live="polite">
+      1 / 5
+    </span>
+
+    <button type="button" onclick="nextMovie()">
+      Next Movie &#8594;
+    </button>
+  </div>
+</section>
+
+    
+<!-- MOVIE TRAILERS -->
+<section id="trailers">
+
+  <h2>Watch the Movie Trailers</h2>
+
+  <p>
+    Watch the trailers below to explore each movie.
+  </p>
+
+  <div class="trailer-grid">
+
+    <!-- SPIRITED AWAY -->
+    <article class="trailer-card">
+      <h3>Spirited Away (2001)</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/GAp2_0JJskk"
+          title="Spirited Away Trailer"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
+
+    <!-- MY NEIGHBOR TOTORO -->
+    <article class="trailer-card">
+      <h3>My Neighbor Totoro (1988)</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/92a7Hj0ijLs"
+          title="My Neighbor Totoro Trailer"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
+
+    <!-- HOWL'S MOVING CASTLE -->
+    <article class="trailer-card">
+      <h3>Howl's Moving Castle (2004)</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/2x5SejvTMeA"
+          title="Howl's Moving Castle Trailer"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
+
+    <!-- PRINCESS MONONOKE -->
+    <article class="trailer-card">
+      <h3>Princess Mononoke (1997)</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/opCxPAwdB6U"
+          title="Princess Mononoke Trailer"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
+
+    <!-- KIKI'S DELIVERY SERVICE -->
+    <article class="trailer-card">
+      <h3>Kiki's Delivery Service (1989)</h3>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/4bG17OYs-GA"
+          title="Kiki's Delivery Service Trailer"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- REFERENCES -->
+<section id="references">
+
+  <h2>References and Research Sources</h2>
+
+  <p>
+    The following sources provide information about
+    Hayao Miyazaki, Studio Ghibli, the five featured
+    films, artwork, images, and movie trailers used
+    in this virtual art gallery.
+  </p>
+
+  <!-- BIOGRAPHY AND RESEARCH -->
+  <h3>Hayao Miyazaki and Studio Ghibli</h3>
+
+  <ul>
+    <li>
+      <a href="https://www.ghibli.jp/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Official Website
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli.jp/works/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Official Film Catalog
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.oscars.org/governors-awards/2014/hayao-miyazaki"
+         target="_blank" rel="noopener noreferrer">
+        Academy of Motion Picture Arts and Sciences —
+        Hayao Miyazaki
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.bunka.go.jp/j-mediaarts-festival/en/award/profile/miyazaki-hayao/"
+         target="_blank" rel="noopener noreferrer">
+        Japan Media Arts Festival — Miyazaki Hayao
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli-museum.jp/en/"
+         target="_blank" rel="noopener noreferrer">
+        Ghibli Museum — Official Website
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.britannica.com/biography/Miyazaki-Hayao"
+         target="_blank" rel="noopener noreferrer">
+        Encyclopaedia Britannica — Miyazaki Hayao
+      </a>
+    </li>
+  </ul>
+
+
+  <!-- OFFICIAL MOVIE INFORMATION -->
+  <h3>Featured Movies — Official Sources</h3>
+
+  <ul>
+    <li>
+      <a href="https://www.ghibli.jp/works/chihiro/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Spirited Away (2001)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli.jp/works/totoro/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — My Neighbor Totoro (1988)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli.jp/works/howl/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Howl's Moving Castle (2004)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli.jp/works/mononoke/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Princess Mononoke (1997)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.ghibli.jp/works/majo/"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli — Kiki's Delivery Service (1989)
+      </a>
+    </li>
+  </ul>
+
+
+  <!-- IMAGE AND ARTWORK REFERENCES -->
+  <h3>Image and Artwork References</h3>
+
+  <!-- SPIRITED AWAY IMAGES -->
+  <h4>Spirited Away (2001)</h4>
+
+  <ol>
+    <li>
+      <a href="https://wildezine.com/4834/arts/the-hidden-depth-of-hayao-miyazakis-spirited-away/"
+         target="_blank" rel="noopener noreferrer">
+        Wilde Zine — The Hidden Depth of Hayao Miyazaki's Spirited Away
+      </a>
+    </li>
+
+    <li>
+      <a href="https://bloomreviewsblog.com/2016/12/18/ghibli-month-spirited-away/"
+         target="_blank" rel="noopener noreferrer">
+        Bloom Reviews — Ghibli Month: Spirited Away
+      </a>
+    </li>
+
+    <li>
+      <a href="https://mythsterhood.com/letting-dragons-lead-us-back-to-nature/"
+         target="_blank" rel="noopener noreferrer">
+        Mythsterhood — Letting Dragons Lead Us Back to Nature
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.blendernation.com/2020/07/08/behind-the-scenes-spirit-train/"
+         target="_blank" rel="noopener noreferrer">
+        BlenderNation — Behind the Scenes: Spirit Train
+      </a>
+    </li>
+  </ol>
+
+
+  <!-- TOTORO IMAGES -->
+  <h4>My Neighbor Totoro (1988)</h4>
+
+  <ol>
+    <li>
+      <a href="https://ghibli.fandom.com/wiki/My_Neighbor_Totoro"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli Wiki — My Neighbor Totoro
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.threads.com/@ghibliarchives/post/Da_U11Dkol0/my-neighbor-totoro-director-hayao-miyazaki-by-studio-ghibli/"
+         target="_blank" rel="noopener noreferrer">
+        Ghibli Archives — My Neighbor Totoro (Threads)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://ghibli.fandom.com/wiki/Bus_Stop"
+         target="_blank" rel="noopener noreferrer">
+        Studio Ghibli Wiki — Bus Stop
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.reddit.com/r/ghibli/comments/1j6ioev/is_catbus_the_greatest_thing_a_human_mind_has/"
+         target="_blank" rel="noopener noreferrer">
+        Reddit r/ghibli — Catbus Discussion
+      </a>
+    </li>
+  </ol>
+
+
+  <!-- HOWL'S MOVING CASTLE IMAGES -->
+  <h4>Howl's Moving Castle (2004)</h4>
+
+  <ol>
+    <li>
+      <a href="https://www.amazon.com/Moving-Castle-Customized-14inch-WallPaper/dp/B00SESHP6M"
+         target="_blank" rel="noopener noreferrer">
+        Amazon — Howl's Moving Castle Artwork Listing
+      </a>
+    </li>
+
+    <li>
+      <a href="https://independent-magazine.org/2024/07/08/hayao-miyazakis-howls-moving-castle-celebrates-20-years-since-release/"
+         target="_blank" rel="noopener noreferrer">
+        Independent Magazine — Howl's Moving Castle 20th Anniversary
+      </a>
+    </li>
+
+    <li>
+      <a href="https://howlscastle.fandom.com/wiki/Sophie_Hatter"
+         target="_blank" rel="noopener noreferrer">
+        Howl's Moving Castle Wiki — Sophie Hatter
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com/p/DT3BT6Cjal6/"
+         target="_blank" rel="noopener noreferrer">
+        Instagram — Howl's Moving Castle Image Post
+      </a>
+    </li>
+  </ol>
+
+
+  <!-- PRINCESS MONONOKE IMAGES -->
+  <h4>Princess Mononoke (1997)</h4>
+
+  <ol>
+    <li>
+      <a href="https://www.tcm.com/articles/114164/princess-mononoke"
+         target="_blank" rel="noopener noreferrer">
+        Turner Classic Movies — Princess Mononoke
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.thehunchblog.com/2014/10/23/princess-mononoke-review-kodama-are-the-greatest-things-ever/"
+         target="_blank" rel="noopener noreferrer">
+        The Hunchblog — Princess Mononoke Review
+      </a>
+    </li>
+
+    <li>
+      <a href="https://ladygeekgirl.wordpress.com/2013/05/10/ghibli-month-princess-mononoke/"
+         target="_blank" rel="noopener noreferrer">
+        Lady Geek Girl — Ghibli Month: Princess Mononoke
+      </a>
+    </li>
+
+    <li>
+      <a href="https://wall.alphacoders.com/big.php?i=122950"
+         target="_blank" rel="noopener noreferrer">
+        Alpha Coders — Princess Mononoke Wallpaper
+      </a>
+    </li>
+  </ol>
+
+
+  <!-- KIKI'S DELIVERY SERVICE IMAGES -->
+  <h4>Kiki's Delivery Service (1989)</h4>
+
+  <ol>
+    <li>
+      <a href="https://davistheater.com/movies/kikis-delivery-service/"
+         target="_blank" rel="noopener noreferrer">
+        Davis Theater — Kiki's Delivery Service
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.reddit.com/r/PixelArt/comments/1022i42/koriko_kikis_delivery_service/"
+         target="_blank" rel="noopener noreferrer">
+        Reddit r/PixelArt — Koriko Pixel Art
+      </a>
+    </li>
+
+    <li>
+      <a href="https://anime.goodfon.com/senen/wallpaper-art-hayao-miyazaki-kiki-okino-779.html"
+         target="_blank" rel="noopener noreferrer">
+        GoodFon — Kiki's Delivery Service Artwork
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.crunchyroll.com/news/features/2019/7/29/the-true-magic-is-growing-up-30-years-of-kikis-delivery-service?srsltid=AYCX9vLQxxHitwObi3DredwyoopC23bwuNZ1-GQSLD-HjETd-Do83_8n"
+         target="_blank" rel="noopener noreferrer">
+        Crunchyroll — 30 Years of Kiki's Delivery Service
+      </a>
+    </li>
+  </ol>
+
+
+  <!-- MOVIE TRAILERS -->
+  <h3>Movie Trailer Sources</h3>
+
+  <ul>
+    <li>
+      <a href="https://youtu.be/GAp2_0JJskk"
+         target="_blank" rel="noopener noreferrer">
+        Spirited Away — YouTube Trailer
+      </a>
+    </li>
+
+    <li>
+      <a href="https://youtu.be/92a7Hj0ijLs"
+         target="_blank" rel="noopener noreferrer">
+        My Neighbor Totoro — YouTube Trailer
+      </a>
+    </li>
+
+    <li>
+      <a href="https://youtu.be/2x5SejvTMeA"
+         target="_blank" rel="noopener noreferrer">
+        Howl's Moving Castle — YouTube Trailer
+      </a>
+    </li>
+
+    <li>
+      <a href="https://youtu.be/opCxPAwdB6U"
+         target="_blank" rel="noopener noreferrer">
+        Princess Mononoke — YouTube Trailer
+      </a>
+    </li>
+
+    <li>
+      <a href="https://youtu.be/4bG17OYs-GA"
+         target="_blank" rel="noopener noreferrer">
+        Kiki's Delivery Service — YouTube Trailer
+      </a>
+    </li>
+</ul>
+
+</section>
+
+</main>
+
+<footer>
+  <p>Art Gallery - Hayao Miyazaki</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
